@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>週日日本客戶高爾夫＋高鐵＋松山機場行程 Codex</title>
+  <style>
+    :root{
+      --bg:#0b1220;--card:#0f1b33;--muted:#9fb0d0;--text:#eaf0ff;
+      --ok:#34d399;--warn:#fbbf24;--bad:#fb7185;--line:#223258;
+      --chip:#15264a;--link:#7dd3fc;
+    }
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Noto Sans TC,"PingFang TC","Microsoft JhengHei",Arial;
+      background:linear-gradient(180deg,var(--bg),#060a14);color:var(--text);}
+    .wrap{max-width:980px;margin:24px auto;padding:0 16px 56px;}
+    header{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;margin-bottom:16px;}
+    h1{font-size:22px;margin:0;letter-spacing:.2px}
+    .sub{color:var(--muted);font-size:13px;line-height:1.5;max-width:720px}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;}
+    @media (min-width:900px){.grid{grid-template-columns:1.2fr .8fr;}}
+    .card{background:rgba(15,27,51,.92);border:1px solid var(--line);border-radius:16px;padding:14px 14px 12px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .card h2{font-size:15px;margin:0 0 10px;display:flex;gap:8px;align-items:center}
+    .tag{font-size:12px;padding:3px 8px;border-radius:999px;background:var(--chip);border:1px solid var(--line);color:var(--muted)}
+    .tag.ok{color:#052e1a;background:rgba(52,211,153,.18);border-color:rgba(52,211,153,.35)}
+    .tag.warn{color:#3a2a00;background:rgba(251,191,36,.16);border-color:rgba(251,191,36,.35)}
+    .tag.bad{color:#3b0a16;background:rgba(251,113,133,.14);border-color:rgba(251,113,133,.35)}
+
+    .timeline{border-left:2px solid var(--line);margin:6px 0 0 6px;padding-left:14px}
+    .row{display:grid;grid-template-columns:82px 1fr;gap:10px;align-items:flex-start;margin:10px 0}
+    .t{font-weight:700;font-variant-numeric:tabular-nums}
+    .desc{color:var(--text)}
+    .hint{color:var(--muted);font-size:12.5px;line-height:1.55;margin-top:2px}
+    .pillbar{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 0}
+    .pill{font-size:12px;border:1px dashed var(--line);color:var(--muted);padding:6px 10px;border-radius:999px;background:rgba(21,38,74,.45)}
+    a{color:var(--link)}
+    .two{display:grid;grid-template-columns:1fr;gap:10px}
+    @media (min-width:520px){.two{grid-template-columns:1fr 1fr}}
+
+    table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:14px;border:1px solid var(--line)}
+    th,td{padding:10px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+    th{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);background:rgba(21,38,74,.5)}
+    tr:last-child td{border-bottom:none}
+    .k{color:var(--muted);font-size:12px}
+    .v{font-variant-numeric:tabular-nums}
+
+    .callout{border:1px solid var(--line);border-radius:14px;padding:12px;background:rgba(21,38,74,.35)}
+    .callout strong{display:block;margin-bottom:6px}
+    .small{font-size:12.5px;color:var(--muted);line-height:1.55}
+
+    .footer{margin-top:14px;color:var(--muted);font-size:12px;line-height:1.6}
+    code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:8px;border:1px solid rgba(255,255,255,.08)}
+    .mono{font-variant-numeric:tabular-nums}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>週日日本客戶高爾夫＋高鐵＋松山機場行程 Codex</h1>
+        <div class="sub">
+          目標：週日打球後，接高鐵回台北，並在 <strong class="mono">17:15</strong> 前完成客戶 <strong>松山機場 → 上海虹橋</strong> 登機。
+          <br/>已訂場：<strong>大崗山 06:20</strong>（南一滿／信誼僅 <strong class="mono">06:52</strong>）。
+        </div>
+      </div>
+      <div class="pillbar">
+        <span class="pill">假設：週日 18 洞用時 5.0–5.5 小時</span>
+        <span class="pill">假設：沖澡整理 30 分鐘（日本客戶建議保留）</span>
+        <span class="pill">假設：台北車站 → 松山機場 30 分鐘緩衝</span>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- LEFT: Primary plan -->
+      <section class="card">
+        <h2>Plan A｜大崗山 06:20（已訂） <span class="tag warn">偏緊・需控節奏</span></h2>
+        <div class="timeline">
+          <div class="row">
+            <div class="t mono">05:40</div>
+            <div class="desc">集合 / 抵達球場（建議提早 40 分鐘）
+              <div class="hint">含寄放行李、確認 tee time、暖身。日本客戶通常偏好不慌不忙。</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="t mono">06:20</div>
+            <div class="desc">開球（Tee Off）
+              <div class="hint">目標節奏：每洞 15–18 分鐘，遇塞車就立刻請球僮協助控 pace。</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="t mono">11:50</div>
+            <div class="desc">打完球（保守抓 5.5 小時）
+              <div class="hint">若 12:00 還沒結束，後段會開始壓迫高鐵與機場緩衝。</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="t mono">12:20</div>
+            <div class="desc">沖澡＋換裝＋上車（30 分鐘）
+              <div class="hint">若客戶很在意儀容，這段建議不要省；可改「快速沖＋更衣」。</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="t mono">13:10</div>
+            <div class="desc">抵達左營高鐵站（車程保守抓 50 分鐘）
+              <div class="hint">星期日車流不可賭；若 13:15 還在路上，請立刻評估改搭下一班或改走機場方案（見右側應變）。</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="t mono">13:xx</div>
+            <div class="desc">購票／進站／取餐（如需）
+              <div class="hint">若你已訂好車票，進站壓力會小很多。建議預留 10–15 分鐘。</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="t mono">12:55</div>
+            <div class="desc"><strong>建議目標車次（左營 → 台北）</strong>
+              <div class="hint">你附件裡的參考車次：<span class="mono">12:55 → 14:32（車次 128）</span>。若錯過，後續會快速變緊。</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="t mono">14:32</div>
+            <div class="desc">抵達台北車站
+              <div class="hint">直接轉捷運至松山機場，含步行與轉乘緩衝抓 30 分鐘。</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="t mono">15:05</div>
+            <div class="desc">抵達松山機場（目標）
+              <div class="hint">建議最晚 <strong class="mono">15:30</strong> 一定要到，才不會讓日本客戶焦慮。</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="t mono">17:15</div>
+            <div class="desc">松山起飛 → 上海虹橋
+              <div class="hint">完成。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout" style="margin-top:12px">
+          <strong>關鍵觀察（大崗山 06:20）</strong>
+          <div class="small">
+            這個行程的「最大風險」不是開球，是 <code>週日 pace 失控</code> + <code>沖澡整理</code> + <code>球場到左營高鐵的車流</code> 疊在一起。
+            若全程 5.0 小時內結束，會舒服很多；但若拉到 5.5 小時，就會開始偏緊。
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT: Options & controls -->
+      <aside class="card">
+        <h2>備選與控風險 <span class="tag">給你當指揮台</span></h2>
+
+        <div class="two">
+          <div class="callout">
+            <strong>Plan B｜信誼 06:52（可行性：低）</strong>
+            <div class="small">
+              信誼若 <span class="mono">06:52</span> 開球，打到 <span class="mono">12:22–12:42</span> 很常見；
+              再加上沖澡＋車程，幾乎會把高鐵壓到極限。
+              <br/><br/>
+              <span class="tag bad">結論：除非只打 9 洞或客戶不沖澡</span>
+            </div>
+          </div>
+          <div class="callout">
+            <strong>Plan C｜調整玩法（最實務）</strong>
+            <div class="small">
+              若當天 pace 明顯偏慢，可在第 9 洞後做決策：
+              <ul style="margin:8px 0 0 18px; padding:0; color:var(--muted)">
+                <li><strong>只打 9 洞</strong>：留完整沖澡＋午餐＋高鐵緩衝</li>
+                <li><strong>採「快速沖＋更衣」</strong>：保留儀容但縮短時間</li>
+                <li><strong>先訂好高鐵票</strong>：避免現場排隊/選車</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h2 style="margin-top:12px">時間門檻（Decision Gates） <span class="tag warn">看到就要動</span></h2>
+        <table>
+          <thead>
+            <tr><th>時間點</th><th>檢查</th><th>動作</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="v mono">09:30</td>
+              <td class="k">完成 7–8 洞的進度是否正常？</td>
+              <td class="k">若明顯落後：請球僮協助控 pace／必要時跳洞（依球場規定）</td>
+            </tr>
+            <tr>
+              <td class="v mono">10:45</td>
+              <td class="k">是否能在 11:50 前收工？</td>
+              <td class="k">若不行：開始預告「快速沖」或「9 洞決策」</td>
+            </tr>
+            <tr>
+              <td class="v mono">12:20</td>
+              <td class="k">是否已離開球場往左營？</td>
+              <td class="k">若還沒：後續高鐵會很緊，立刻啟動 Plan C（縮時/改方案）</td>
+            </tr>
+            <tr>
+              <td class="v mono">15:30</td>
+              <td class="k">是否已到松山機場？</td>
+              <td class="k">最晚底線，過了會讓客戶壓力上來</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="footer">
+          <div><strong>可自行替換的欄位：</strong></div>
+          <div>• 球場地址/導航連結：把 <code>TODO</code> 改成 Google Maps 連結</div>
+          <div>• 車程估算：用你實際司機/路況再微調（建議都加 10–15 分鐘 buffer）</div>
+          <div style="margin-top:8px">版本：<span class="mono">v1.0</span>（可直接貼 GitHub）</div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="card" style="margin-top:14px">
+      <h2>快速摘要（給你 10 秒確認） <span class="tag ok">可執行</span></h2>
+      <ul style="margin:8px 0 0 18px; color:var(--muted); line-height:1.7">
+        <li><strong>已訂大崗山 06:20</strong>：可跑，但要把 <strong>5.5 小時</strong> 當常態，並保留 <strong>沖澡 30 分鐘</strong>。</li>
+        <li><strong>目標高鐵</strong>：左營 <span class="mono">12:55 → 14:32</span>（車次 128）是最舒服的落點。</li>
+        <li><strong>信誼 06:52</strong>：18 洞＋國際線基本上太賭，除非改 9 洞或大幅縮時。</li>
+        <li><strong>底線</strong>：<span class="mono">15:30</span> 必到松山機場，讓日本客戶安心。</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
