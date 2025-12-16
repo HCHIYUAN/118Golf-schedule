@@ -50,6 +50,7 @@
     .footer{margin-top:14px;color:var(--muted);font-size:12px;line-height:1.6}
     code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:8px;border:1px solid rgba(255,255,255,.08)}
     .mono{font-variant-numeric:tabular-nums}
+    .gmap{display:inline-flex;vertical-align:-3px;margin-right:6px}
   </style>
 </head>
 <body>
@@ -87,16 +88,18 @@
             </div>
           </div>
           <div class="row">
-            <div class="t mono">11:50</div>
-            <div class="desc">打完球（保守抓 5.5 小時）
-              <div class="hint">若 12:00 還沒結束，後段會開始壓迫高鐵與機場緩衝。</div>
+            <div class="t mono">11:40</div>
+            <div class="desc">打完球（目標：5 小時 20 分內）
+              <div class="hint">要有餘裕接高鐵，建議把「完賽目標」訂在 <strong class="mono">11:40</strong>；若 <strong class="mono">12:00</strong> 還沒結束，後面會變成壓力測試。</div>
             </div>
           </div>
+          </div>
           <div class="row">
-            <div class="t mono">12:20</div>
-            <div class="desc">沖澡＋換裝＋上車（30 分鐘）
-              <div class="hint">若客戶很在意儀容，這段建議不要省；可改「快速沖＋更衣」。</div>
+            <div class="t mono">12:10</div>
+            <div class="desc">沖澡＋換裝＋上車，並<strong>最晚離開球場</strong>
+              <div class="hint">日本客戶通常會想沖澡，但為了行程安全，建議採「快速沖＋更衣」把離場時間鎖在 <strong class="mono">12:00–12:10</strong>。</div>
             </div>
+          </div>
           </div>
           <div class="row">
             <div class="t mono">13:10</div>
@@ -189,8 +192,8 @@
               <td class="k">若不行：開始預告「快速沖」或「9 洞決策」</td>
             </tr>
             <tr>
-              <td class="v mono">12:20</td>
-              <td class="k">是否已離開球場往左營？</td>
+              <td class="v mono">12:10</td>
+              <td class="k">是否已離開球場往左營？（建議最晚 12:10）</td>
               <td class="k">若還沒：後續高鐵會很緊，立刻啟動 Plan C（縮時/改方案）</td>
             </tr>
             <tr>
@@ -202,8 +205,41 @@
         </table>
 
         <div class="footer">
-          <div><strong>可自行替換的欄位：</strong></div>
-          <div>• 球場地址/導航連結：把 <code>TODO</code> 改成 Google Maps 連結</div>
+          <div><strong>導航連結（點了就走）</strong></div>
+          <div class="small">
+            <span class="gmap" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="#EA4335"/>
+                <path d="M12 13.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z" fill="#4285F4"/>
+                <path d="M6.2 8.6A7 7 0 0 1 12 3a7 7 0 0 1 5.8 3.1L12 10.1 6.2 8.6Z" fill="#34A853" opacity=".9"/>
+                <path d="M17.8 6.1A7 7 0 0 1 19 10c0 5.8-7 12-7 12s-2.2-1.9-4.2-4.8L17.8 6.1Z" fill="#FBBC05" opacity=".9"/>
+              </svg>
+            </span>
+            球場：<a href="TODO_GOOGLE_MAPS_DAGANGSHAN" target="_blank" rel="noopener">大崗山球場 Google Maps</a>
+            <br/>
+            <span class="gmap" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="#EA4335"/>
+                <path d="M12 13.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z" fill="#4285F4"/>
+                <path d="M6.2 8.6A7 7 0 0 1 12 3a7 7 0 0 1 5.8 3.1L12 10.1 6.2 8.6Z" fill="#34A853" opacity=".9"/>
+                <path d="M17.8 6.1A7 7 0 0 1 19 10c0 5.8-7 12-7 12s-2.2-1.9-4.2-4.8L17.8 6.1Z" fill="#FBBC05" opacity=".9"/>
+              </svg>
+            </span>
+            高鐵：<a href="TODO_GOOGLE_MAPS_ZUOYING_HSR" target="_blank" rel="noopener">左營高鐵站 Google Maps</a>
+            <br/>
+            <span class="gmap" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="#EA4335"/>
+                <path d="M12 13.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z" fill="#4285F4"/>
+                <path d="M6.2 8.6A7 7 0 0 1 12 3a7 7 0 0 1 5.8 3.1L12 10.1 6.2 8.6Z" fill="#34A853" opacity=".9"/>
+                <path d="M17.8 6.1A7 7 0 0 1 19 10c0 5.8-7 12-7 12s-2.2-1.9-4.2-4.8L17.8 6.1Z" fill="#FBBC05" opacity=".9"/>
+              </svg>
+            </span>
+            機場：<a href="TODO_GOOGLE_MAPS_SONGSHAN_AIRPORT" target="_blank" rel="noopener">台北松山機場 Google Maps</a>
+          </div>
+
+          <div style="margin-top:10px"><strong>可自行替換的欄位：</strong></div>
+          <div>• 把上面三個 <code>TODO_...</code> 換成你要的 Google Maps 連結</div>
           <div>• 車程估算：用你實際司機/路況再微調（建議都加 10–15 分鐘 buffer）</div>
           <div style="margin-top:8px">版本：<span class="mono">v1.0</span>（可直接貼 GitHub）</div>
         </div>
